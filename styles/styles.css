@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.ctn{
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.btn{
+    background-color: hsl(61, 70%, 52%)
+}
+.imgTotal{
+    background-color: rgba(7, 52, 70, 0.918);
+}
+.img{
+    background-color:- hsl(61, 70%, 52%)
+}
