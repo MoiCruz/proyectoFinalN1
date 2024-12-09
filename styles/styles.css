@@ -20,12 +20,15 @@
 .ctn2{
     margin: 0;
 }
+.display{
+    height: 40px;
+}
+
 .btn{
     background-color: hsl(61, 70%, 52%);
 }
 .intereses{
-    border-color: black;
-    background-color: white;
+   
     margin-top: 10px;
 }
 .imgTotal{
