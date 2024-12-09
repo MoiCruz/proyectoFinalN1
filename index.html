@@ -28,31 +28,44 @@
 </head>
 
 <body class="body">
-  <div class="ctn container-fluid d-flex row vh-100">
+  <div class="ctn container-sm d-flex row vh-100">
     <div class="ctn2 d-flex row bg-danger justify-content-center p-4">
       <h1 class="titulo p-0 align-content-end lh-0"> Mortgage Calculator</h1>
-      <p class="subTitulo p-0 m-0 lh-1">Clear All</p>
+      <h5 class="subTitulo p-0 m-0 lh-1">Clear All</h5>
       <div class=" ctn3 d-flex row p-0">
         <p class="parrafo m-0"> Mortgage Amount</p>
-        <input class="m" type="text">
+        <div class="display bg-success">
+          <span class="col-2">$</span>
+          <input class="Monto col-10" type="text">
+          </div>
         <p class="parrafo m-0"> Mortgage Term</p>
-        <input class="m" type="text">
+        <div class="display bg-success">
+          <input class="plazo col-10" type="text">
+          <span class="">years</span>
+          </div>
         <p class="parrafo m-0">Interest Rate</p>
-        <input class="m" type="text">
+        <div class="display bg-success">
+        <input class="interes col-11" type="text">
+        <span class="">%</span>
+        </div>
         <p class="parrafo m-0">Mortgage Type</p>
+        <div class="intereses p-2">
         <label for="">
           <input class="btn " type="radio"> Repayment
         </label>
+        </div>
+        <div class="intereses p-2">
         <label for="">
           <input class="btn" type="radio">Interest Only
         </label>
+      </div>
       </div>
 
       <div class="">
         <button class="btn">Calculate Repayments</button>
       </div>
     </div>
-    <div class="imgTotal">
+    <div class="imgTotal p-0 m-0 d-flex row align-content-center">
       <div class="img">
         <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="none" viewBox="0 0 192 192">
           <path fill="#fff"
@@ -147,18 +160,18 @@
             d="M19.622 98.995c-.153.845-1.036 1.498-1.881 1.613-.883.077-1.766-.115-2.573-.499a9.519 9.519 0 0 1-4.109-3.264c-.384-.615-.768-2.611.576-2.074.807.307 1.613 1.46 2.343 1.959.422.23 5.568 2.764 5.644 2.265Z" />
         </svg>
       </div>
-      <div class="d-none">
-        <ul class="imgText1">
+      <div class="">
+        <ul class="imgText1 list-unstyled text-light text-center">
           <li class="imgP1">Results shown here</li>
           <li class="imgP1">Complete the form and click “calculate repayments” to see what</li>
           <li class="imgP1">your monthly repayments would be.</li>
         </ul>
-        <div>
+        <div class="d-none">
           <h3>Your results</h3>
           <p> Your results are shown below based on the information you provided. To adjust the results, edit the form
             and click “calculate repayments” again.</p>
         </div>
-        <div>
+        <div class="d-none">
           <h4>Your monthly repayments</h4>
           <input type="display">
           <h4>Total you'll repay over the term</h4>
