@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    
-}
 .ctn{
     margin: 0;
     padding: 0;
@@ -23,17 +20,41 @@
 .display{
     height: 40px;
 }
-
-.btn{
-    background-color: hsl(61, 70%, 52%);
+.inputs{
+    background-color: rgb(206, 229, 250) !important;
 }
 .intereses{
-   
-    margin-top: 10px;
+    height: 40px;
 }
+
+.btn{
+    height: 55px;
+    background-color: hsl(61, 70%, 52%);
+}
+.btnRadio:active{
+    background-color: hsl(61, 70%, 52%);
+   
+}
+
 .imgTotal{
+    justify-content: center;
     background-color: rgba(7, 52, 70, 0.918);
 }
 .img{
     background-color:- hsl(61, 70%, 52%);
+}
+
+
+@media (min-width: 540px){
+    .body{
+        place-content: center !important;
+        justify-items: center;
+    }
+    .ctn{
+        display: flex;
+        width: 640px !important;
+        min-height: 300px !important;
+        place-items: center !important;
+     
+    }
 }
