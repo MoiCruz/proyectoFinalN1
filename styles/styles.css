@@ -5,6 +5,7 @@
 }
 
 .ctn{
+    background-color: white;
     margin: 0;
     padding: 0;
   
@@ -16,6 +17,9 @@ h1,input,h3{
   font-style: normal;
 }
 .body{
+    display: flex;
+    align-content: center;
+    background-color: rgb(206, 229, 250);
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -30,12 +34,14 @@ h1,input,h3{
 .ctn2{
     margin: 0;
 }
+
 .display{
     height: 40px;
 }
 .inputs{
     background-color: rgb(206, 229, 250) !important;
 }
+
 .intereses{
     height: 40px;
 }
@@ -95,21 +101,39 @@ h4{
 
 @media (min-width: 768px){
     .body{
+        padding: 160px;
+        display: flex;
         place-content: center !important;
         justify-items: center;
     }
     .ctn{
-        min-height: 300px !important;
+        max-width: 958px;
+        align-items:center;
+        align-content: center;
+        height: 480px !important;
         place-items: center !important;
+    }
+    .encabezado{
+        align-items: center;
+        justify-content:space-between;
     }
     .titulo{
         font-size:large;
     }
     .subTitulo{
         justify-content: center;
-        font-size: 20px;
+        font-size: 12px;
     }
+    .ctn2{
+        width: 50%;
+        height: 480px;
+        flex: 1;
+    }
+    
+    
     .imgTotal{
-        border-end-start-radius:  25%;
+        height: 480px;
+        width: 50%;
+        border-end-start-radius:  12%;
     }
 }
