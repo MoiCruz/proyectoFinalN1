@@ -3,10 +3,23 @@
     margin: 0;
     padding: 0;
 }
+
 .ctn{
     margin: 0;
     padding: 0;
   
+}
+h1,input,h3{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 .titulo{
     height: 30px;
@@ -26,25 +39,57 @@
 .intereses{
     height: 40px;
 }
+.intereses:active{
+    background-color: hsl(61, 40%, 73%);
+    border-color: #d7da2f;
+}
+
+.inputRadio:active{
+    background-color: #d7da2f;
+}
 
 .btn{
     height: 55px;
     background-color: hsl(61, 70%, 52%);
 }
-.btnRadio:active{
-    background-color: hsl(61, 40%, 73%);
-   
-}
-
 .imgTotal{
-    justify-content: center;
     background-color: rgba(7, 52, 70, 0.918);
 }
 .img{
-    background-color:- hsl(61, 70%, 52%);
+    background-color:- #d7da2f;
 }
 .imgCalculadora{
-    height: 230px;
+    height: 235px;
+}
+.fondoRes{
+    height: 198px;
+    border-radius: 5%;
+    background-color: #d7da2f;
+}
+.resultados{
+    justify-content: center;
+    width: 100%;
+    height: 98%;
+    border-radius: 4%;
+    border-color: rgba(1, 27, 37, 0.918);
+    background-color: rgba(5, 33, 43, 0.952) !important;
+}
+.azul2{
+    min-height: 352px;
+}
+.azul2Text{
+    font-size: medium;
+}
+h4{
+    font-size: small;
+}
+.yourMonthly{
+    color: #d7da2f;
+    font-size: xx-large;
+}
+.total{
+    color:white;
+    font-size: x-large;
 }
 
 
@@ -56,7 +101,6 @@
     .ctn{
         min-height: 300px !important;
         place-items: center !important;
-     
     }
     .titulo{
         font-size:large;
