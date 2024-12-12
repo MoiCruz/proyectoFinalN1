@@ -45,16 +45,14 @@ h1,input,h3{
     display: block;
 }
 .green:focus{
-    border: solid #d7da2f 1px !important;
+    border: solid #d7da2f 2px !important;
 }
 .green:focus-within .inputs {
-    border: solid #d7da2f 1px !important;
-    outline: none;
+    border: solid #d7da2f 2px !important;
     background-color: #d7da2f !important;
 }
 .green > input:focus + span{
-    border: solid #d7da2f 1px !important;
-    outline: none;
+    border: solid #d7da2f 2px !important;
     background-color: #d7da2f !important;
 }
 .display{
@@ -70,6 +68,10 @@ h1,input,h3{
 .intereses:active{
     background-color: hsl(61, 40%, 73%);
     border-color: #d7da2f;
+}
+.inputRadio{
+    border: solid #d7da2f 1px !important;
+    background-color: #d7da2f !important;
 }
 
 .inputRadio:focus + input{

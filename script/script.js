@@ -51,30 +51,4 @@ function respuesta(e){
     pagosMensuales.textContent = 1000
     pagoTotal.textContent = 10000
 }
-/*
-function calcularPago() {
-    // Obtener los valores de los campos de la hipoteca, el plazo y la tasa de interés
-    const hipoteca = parseFloat(document.getElementById('hipoteca').value);
-    const plazo = parseInt(document.getElementById('plazo').value);
-    const tasaDeInteres = parseFloat(document.getElementById('tasaDeInteres').value) / 100;
-  
-    // Validación de campos vacíos
-    if (isNaN(hipoteca) || isNaN(plazo) || isNaN(tasaDeInteres)) {
-      alert("Todos los campos deben ser rellenados correctamente.");
-      return;
-    }
-  
-    // Fórmula para calcular el pago mensual
-    const pagoMensual = hipoteca * tasaDeInteres * Math.pow(1 + tasaDeInteres, plazo) / (Math.pow(1 + tasaDeInteres, plazo) - 1);
-   
-    console.log(calcularPago);
-     
-    // Mostrar el resultado (puedes ajustar donde mostrar el resultado según tu diseño)
-    alert(`El pago mensual es: £${pagoMensual.toFixed(2)}`);
-  }
-  
-  // Asignar el evento de clic al botón "Calcular"
-  document.getElementById('calcular').addEventListener('click', function(event) {
-    event.preventDefault(); // Evitar que se recargue la página
-    calcularPago();
-  });*/
+
