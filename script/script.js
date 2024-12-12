@@ -1,7 +1,8 @@
+//displays para capturar//
 const borrar = document.querySelector(`#borrar`)
 const hipoteca = document.querySelector(`#hipoteca`)
 const plazo = document.querySelector(`#plazo`)
-const tazaDeInteres = document.querySelector(`#tazaDeInteres`)
+const tasaDeInteres = document.querySelector(`#tasaDeInteres`)
 //imputs radio//
 const tipoDeHipoteca = document.querySelector(`#tipoDeHipoteca`)
 const soloInteres = document.querySelector(`#soloInteres`)
@@ -11,16 +12,35 @@ const calcular = document.querySelector(`#calcular`)
 const Resultados = document.querySelector(`#Resultados`)
 const pagosMensuales = document.querySelector(`#pagosMensuales`)
 const pagoTotal = document.querySelector(`#pagoTotal`)
-//error campo cero//
-const errorHipoteca = document.querySelector(`#errorHipoteca`)
-const errorPlazo = document.querySelector(`#errorPlazo`)
-const errorTasa = document.querySelector(`#errorTasa`)
-const errorType = document.querySelector(`#errorType`)
-const errorInteres = document.querySelector(`#errorInteres`)
 
+/*const form = document.querySelector('#form')
+
+function calcular(e) {
+    e.preventDefault() 
+    const formData = new FormData(form)
+    let valor1 = formData.get('hipoteca'); 
+    let valor2 = formData.get('plazo'); 
+    let valor3 = formData.get('tazaDeInteres');
+
+    
+    console.log(form.elements.hipoteca);
+    
+    errores(valor1, form.elements.hipoteca)
+    errores(valor2, form.elements.plazo)
+    errores(valor3, form.elements.tazaDeInteres)
+}
+
+function errores(value, element) {
+    if (value === "") {
+        element.parentElement.classList.add('error')
+    } else {
+        element.parentElement.classList.remove('error')
+    }
+}
+
+form.addEventListener('submit', calcular)*/
 
 calcular.addEventListener(`click`, respuesta)
-
 
 
 
@@ -31,4 +51,30 @@ function respuesta(e){
     pagosMensuales.textContent = 1000
     pagoTotal.textContent = 10000
 }
-
+/*
+function calcularPago() {
+    // Obtener los valores de los campos de la hipoteca, el plazo y la tasa de interés
+    const hipoteca = parseFloat(document.getElementById('hipoteca').value);
+    const plazo = parseInt(document.getElementById('plazo').value);
+    const tasaDeInteres = parseFloat(document.getElementById('tasaDeInteres').value) / 100;
+  
+    // Validación de campos vacíos
+    if (isNaN(hipoteca) || isNaN(plazo) || isNaN(tasaDeInteres)) {
+      alert("Todos los campos deben ser rellenados correctamente.");
+      return;
+    }
+  
+    // Fórmula para calcular el pago mensual
+    const pagoMensual = hipoteca * tasaDeInteres * Math.pow(1 + tasaDeInteres, plazo) / (Math.pow(1 + tasaDeInteres, plazo) - 1);
+   
+    console.log(calcularPago);
+     
+    // Mostrar el resultado (puedes ajustar donde mostrar el resultado según tu diseño)
+    alert(`El pago mensual es: £${pagoMensual.toFixed(2)}`);
+  }
+  
+  // Asignar el evento de clic al botón "Calcular"
+  document.getElementById('calcular').addEventListener('click', function(event) {
+    event.preventDefault(); // Evitar que se recargue la página
+    calcularPago();
+  });*/

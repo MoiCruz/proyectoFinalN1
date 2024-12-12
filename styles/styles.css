@@ -34,7 +34,26 @@ h1,input,h3{
 .ctn2{
     margin: 0;
 }
-
+.vacio > input{
+    border: solid red 1px;
+}
+.vacio > span{
+    background-color: red !important;
+    color: white;
+}
+.vacio > p{
+    display: block;
+}
+.green:focus-within .inputs {
+    border: solid #d7da2f 1px !important;
+    outline: none;
+    background-color: #d7da2f !important;
+}
+.green > input:focus + span{
+    border: solid #d7da2f 1px !important;
+    outline: none;
+    background-color: #d7da2f !important;
+}
 .display{
     height: 40px;
 }
@@ -50,8 +69,9 @@ h1,input,h3{
     border-color: #d7da2f;
 }
 
-.inputRadio:active{
-    background-color: #d7da2f;
+.inputRadio:focus + input{
+    border: solid #d7da2f 1px !important;
+    background-color: #d7da2f !important;
 }
 
 .btn{
@@ -81,7 +101,7 @@ h1,input,h3{
     background-color: rgba(5, 33, 43, 0.952) !important;
 }
 .azul2{
-    min-height: 352px;
+    height: 400px;
 }
 .azul2Text{
     font-size: medium;
@@ -97,6 +117,13 @@ h4{
     color:white;
     font-size: x-large;
 }
+.errorCaptura{
+    margin-block-end: 0;
+    padding: 0;
+}
+.fondoRes{
+    height: 60%;
+}
 
 
 @media (min-width: 768px){
@@ -110,7 +137,7 @@ h4{
         max-width: 958px;
         align-items:center;
         align-content: center;
-        height: 480px !important;
+        height: 560px !important;
         place-items: center !important;
     }
     .encabezado{
@@ -126,14 +153,23 @@ h4{
     }
     .ctn2{
         width: 50%;
-        height: 480px;
+        height: 560px;
         flex: 1;
     }
-    
-    
     .imgTotal{
-        height: 480px;
+        align-items: center;
+        justify-content: center;
+        height: 560px;
         width: 50%;
         border-end-start-radius:  12%;
+    }
+    .text1{
+        margin-bottom: 3rem;
+    }
+    .azul2Text{
+        margin-bottom: 1rem;
+    }
+    .fondoRes{
+        height: 60%;
     }
 }
