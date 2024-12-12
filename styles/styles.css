@@ -44,6 +44,9 @@ h1,input,h3{
 .vacio > p{
     display: block;
 }
+.green:focus{
+    border: solid #d7da2f 1px !important;
+}
 .green:focus-within .inputs {
     border: solid #d7da2f 1px !important;
     outline: none;
