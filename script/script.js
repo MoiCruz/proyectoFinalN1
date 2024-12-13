@@ -101,6 +101,13 @@ function reset() {
     pagoTotal.textContent = ""
     imagen1.classList.remove('d-none')
     Resultados.classList.add('d-none')
+    form.elements.hipoteca.closest('label').classList.remove('vacio');
+    form.querySelector('#dato1 + .errorCaptura').classList.add('d-none'); 
+    form.elements.plazo.closest('label').classList.remove('vacio');
+    form.querySelector('#dato2 + .errorCaptura').classList.add('d-none'); 
+    form.elements.tasaDeInteres.closest('label').classList.remove('vacio');
+    form.querySelector('#dato3 + .errorCaptura').classList.add('d-none'); 
+    form.querySelector('#errorInteres').classList.add('d-none');
 
 }
 borrar.addEventListener('click', reset);
