@@ -59,7 +59,7 @@ function mostrarError(e) {
 calcular.addEventListener('click', mostrarError);
 
 //funcion para ejecutar calculadora//
- /*Nota: aprendi sobre la funcion de "Math.pow" su sintaxis es la siguiente "Math.pow(base, exponente)"*/
+ //Nota: aprendi sobre la funcion de "Math.pow" su sintaxis es la siguiente "Math.pow(base, exponente)"//
      let mPrestamo = 0
      let tasa = 0
      let numeroDePagos = 0
@@ -83,11 +83,24 @@ function calculadora(){
 }
     hipoteca.addEventListener(`input`, calculadora) 
     plazo.addEventListener(`input`, calculadora) 
-    tasaDeInteres.addEventListener(`input`, calculadora)   
-
+    tasaDeInteres.addEventListener(`input`, calculadora) 
+    
 //funcion ventana de resultados//
-function respuesta(e){
+function respuesta(){
     imagen1.classList.add(`d-none`)
     Resultados.classList.remove(`d-none`) 
 }
      calcular.addEventListener(`click`, respuesta)
+
+    //funcion para resetear displays, los resultados y revertir la imagen original//
+function reset() {
+    hipoteca.value = ""
+    tasaDeInteres.value = ""
+    plazo.value = ""
+    mensualidades.textContent = ""
+    pagoTotal.textContent = ""
+    imagen1.classList.remove('d-none')
+    Resultados.classList.add('d-none')
+
+}
+borrar.addEventListener('click', reset);

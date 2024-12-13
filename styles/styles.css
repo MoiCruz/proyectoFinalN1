@@ -63,6 +63,7 @@ h1,input,h3{
     background-color: hsl(61, 70%, 52%);
 }
 .imgTotal{
+    height: 420px;
     background-color: rgba(7, 52, 70, 0.918);
 }
 .img{
