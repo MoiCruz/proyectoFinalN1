@@ -126,9 +126,7 @@ h4{
 }
 /*----------------------------*/
 /* styles cuando esta activo el input */
-.green:focus-within {
-    border: solid #d7da2f 2px !important; 
-}
+
 .green > input:focus + span {
     background-color: #d7da2f !important;
     color: white; 
@@ -136,10 +134,6 @@ h4{
 .green > input:focus {
     border: solid #d7da2f 2px !important; 
     background-color: #f1f8d7; 
-}
-.green > span:focus + input {
-    background-color: #d7da2f !important;
-    color: white;
 }
 
 /*------------------------------------*/

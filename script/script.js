@@ -59,7 +59,6 @@ function mostrarError(e) {
 calcular.addEventListener('click', mostrarError);
 
 //funcion para ejecutar calculadora//
- //Nota: aprendi sobre la funcion de "Math.pow" su sintaxis es la siguiente "Math.pow(base, exponente)"//
      let mPrestamo = 0
      let tasa = 0
      let numeroDePagos = 0
@@ -68,6 +67,7 @@ function calculadora(){
     mPrestamo = parseInt(hipoteca.value)
     tasa = parseFloat(tasaDeInteres.value)/100/12
     numeroDePagos = parseInt(plazo.value )*12
+    //Nota: aprendi sobre la funcion de "Math.pow" su sintaxis es la siguiente "Math.pow(base, exponente)" sirve para elevar una potecia asi como para obtener una raiz cuadrada o cubica//
     if(mPrestamo !==0 && tasa !==0 && numeroDePagos !==0){
         const numerador = mPrestamo * tasa * Math.pow(1 + tasa, numeroDePagos);
         const denominador = Math.pow(1 + tasa, numeroDePagos) - 1;
@@ -92,7 +92,7 @@ function respuesta(){
 }
      calcular.addEventListener(`click`, respuesta)
 
-    //funcion para resetear displays, los resultados y revertir la imagen original//
+//funcion para resetear displays, los resultados y revertir la imagen original//
 function reset() {
     hipoteca.value = ""
     tasaDeInteres.value = ""
